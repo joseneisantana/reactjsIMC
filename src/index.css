@@ -1,0 +1,64 @@
+/* Reset básico para remover margens e paddings padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Definindo uma fonte global para todo o corpo da aplicação */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;  /* Cor de fundo suave */
+    color: #333;                /* Cor de texto escura para melhor legibilidade */
+    line-height: 1.6;           /* Altura das linhas para melhorar a leitura */
+  }
+  
+  /* Garantindo que o conteúdo principal ocupe 100% da altura da página */
+  html, body {
+    height: 100%;
+  }
+  
+  /* Definindo o comportamento do cabeçalho */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-weight: bold;
+  }
+  
+  /* Estilo para o link, removendo o sublinhado e mudando a cor */
+  a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+  }
+  
+  /* Adicionando uma borda padrão aos campos de formulário */
+  input, button, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px;
+  }
+  
+  /* Estilo para botões */
+  button {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Estilo de responsividade para telas pequenas */
+  @media (max-width: 768px) {
+    body {
+      font-size: 14px;  /* Tamanho de fonte reduzido em telas menores */
+    }
+  }
+  
